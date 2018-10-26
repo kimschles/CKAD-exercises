@@ -7,8 +7,8 @@
 <p>
 
 ```bash
-kubectl create namespace mynamespace
-kubectl run nginx --image=nginx --restart=Never -n mynamespace
+kubectl create namespace myapp
+kubectl run nginx --image=nginx --restart=Never -n myapp
 ```
 
 </p>
@@ -22,7 +22,7 @@ kubectl run nginx --image=nginx --restart=Never -n mynamespace
 Easily generate YAML with:
 
 ```bash
-kubectl run nginx --image=nginx --restart=Never -n mynamespace --dry-run -o yaml > pod.yaml
+kubectl run nginx --image=nginx --restart=Never -n myapp --dry-run -o yaml > pod.yaml
 ```
 
 ```bash
